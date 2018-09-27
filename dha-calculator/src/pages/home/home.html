@@ -1,0 +1,109 @@
+<ion-content>
+  <ion-grid>
+    <ion-row style="flex: 1">
+      <ion-col>
+        <div class="value-display">
+          <div class="text">{{Display}}</div>
+          <div class="background"></div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col showWhen="landscape" col-4>
+        <button class="calc-button" ion-button color={{RadiansButtonColor}} full (click)="radiusToggle()">Radius</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="operator" full (click)="clickClear()">AC</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button full color="operator" (click)="clickOperator($event)">%</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button full color="operator" (click)="clickRemoveLastInput()">⌫</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button full (click)="clickOperator($event)">÷</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col showWhen="landscape">
+        <button class="calc-button" ion-button color="operator" full (click)="clickOperator($event)">²√x</button>
+      </ion-col>
+      <ion-col showWhen="landscape">
+        <button class="calc-button" ion-button color="operator" full (click)="clickOperator($event)">10^x</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">7</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">8</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">9</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button full (click)="clickOperator($event)">×</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col showWhen="landscape">
+        <button class="calc-button" ion-button color="operator" full (click)="clickOperator($event)">sin</button>
+      </ion-col>
+      <ion-col showWhen="landscape">
+        <button class="calc-button" ion-button color="operator" full (click)="clickOperator($event)">x³</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">4</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">5</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">6</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button full (click)="clickOperator($event)">-</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col showWhen="landscape">
+        <button class="calc-button" ion-button color="operator" full (click)="clickOperator($event)">cos</button>
+      </ion-col>
+      <ion-col showWhen="landscape">
+        <button class="calc-button" ion-button color="operator" full (click)="clickOperator($event)">x²</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">1</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">2</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">3</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button full (click)="clickOperator($event)">+</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col showWhen="landscape">
+        <button class="calc-button" ion-button color="operator" full (click)="clickOperator($event)">tan</button>
+      </ion-col>
+      <ion-col showWhen="landscape">
+        <button class="calc-button" ion-button color="operator" full (click)="clickOperator($event)">π</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="operator" full (click)="clickOperator($event)">+/-</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">0</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="digit" full (click)="clickDigit($event)">.</button>
+      </ion-col>
+      <ion-col>
+        <button class="calc-button" ion-button color="primary" full (click)="clickOperator($event)">=</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
