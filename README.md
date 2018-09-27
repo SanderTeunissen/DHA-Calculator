@@ -1,6 +1,6 @@
 # DHA Calculator
 
-De DHA Calculator applicatie is geschreven als eerste app van de course Develop a Hybrid App van de minor Mobile Application Development.
+De DHA Calculator applicatie is geschreven als eerste app van de course Develop a Hybrid App van de herfst 2018 uitvoering van de minor Mobile Application Development aan de Hogeschool van Arnhem en Nijmegen.
 
 ![Calculator on iPad](./assets/ipad-app-screen.png)
 
